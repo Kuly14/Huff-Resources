@@ -1,7 +1,5 @@
 # Huff Resources
 
-Many of these resources are already outlined in my Solidity-Assembly-Resources.
-
 1. **Huff Tutorial** - Great tutorial by the Huff team. This will give you great intro to the language -> https://docs.huff.sh/tutorial/overview/
 
 2. **Huff Examples** - ERC20 and ERC721 contracts written in Huff -> https://github.com/huff-language/huff-examples
