@@ -1,7 +1,5 @@
 # Huff Resources
 
-This is a list of resources I'm using to learn Huff.
-
 Many of these resources are already outlined in my Solidity-Assembly-Resources.
 
 1. **Huff Tutorial** - Great tutorial by the Huff team. This will give you great intro to the language -> https://docs.huff.sh/tutorial/overview/
