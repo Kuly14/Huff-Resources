@@ -1,0 +1,45 @@
+/*
+* @author Kuly14
+* @notice Simple contract to show how to loop in huff
+ */
+
+
+#define function add_loop() nonpayable returns()
+
+#define macro ADD() = takes(0) returns(0) {
+    // Equivalent to:
+    // uint x = 0;
+    // for(uint i = 0; i < 11; i++) {
+    //      x += 1;
+    //}    
+
+    0x00 0x00           // [0x00, 0x00]
+    mstore              // []
+
+    loop:
+        0x00 mload      // [var]
+        0x01 add        // [var + 1]
+        0x00 mstore     // []
+        0x0a            // [0x09]
+        0x00 mload      // [var, 0x09]
+
+        swap1           // [0x09, var]
+        gt              // [0x09 > var]
+        loop            // [loop]
+        jumpi           // If the var reaches 0x09 it won't loop any more
+
+    
+    0x20 0x00 
+    return
+}
+
+
+#define macro MAIN() = takes(0) returns(0) {
+    0x00 calldataload 0xE0 shr
+
+    dup1 __FUNC_SIG(add_loop) eq add_loop jumpi
+
+
+    add_loop:
+        ADD()
+}
