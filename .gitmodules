@@ -1,0 +1,3 @@
+[submodule "Contracts/Huff-Ownable"]
+	path = Contracts/Huff-Ownable
+	url = git@github.com:Kuly14/Huff-Ownable.git
