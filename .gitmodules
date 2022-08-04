@@ -1,3 +1,6 @@
 [submodule "Contracts/Huff-Ownable"]
 	path = Contracts/Huff-Ownable
 	url = git@github.com:Kuly14/Huff-Ownable.git
+[submodule "Contracts/Huff-Arrays"]
+	path = Contracts/Huff-Arrays
+	url = git@github.com:Kuly14/Huff-Arrays.git
